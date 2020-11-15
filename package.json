@@ -1,0 +1,20 @@
+{
+  "name": "instanode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "start-debug": "node --inspect dist/index.js",    
+    "build-debug": "npm run build && npm run start-debug",
+    "watch": "nodemon --exec npm run build-debug"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.6",
+    "typescript": "^4.0.5"
+  },
+  "dependencies": {}
+}
